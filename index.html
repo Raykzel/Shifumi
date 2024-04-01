@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shifumi</title>
+  <script defer src="assets/js/script.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <h1 id="hello">Bienvenue au jeu Pierre Feuille Ciseaux</h1>
+
+  <div id="welcome">
+    <label for="username" id="name">Entrez votre pseudo :</label>
+    <input type="text" id="username">
+    <div class="button-welcome">
+        <button onclick="startGame()" id="startGame">Commencer le jeu</button>
+        <button onclick="showRules()" id="rulesButton">Voir les règles</button>
+    </div>
+    <div id="rules">
+      <h2>Regles du jeu :</h2>
+      <p>Bienvenue au Pierre Feuille Ciseaux version Marvel !</p>
+      <p>Daredevil bat Bullseye, Bullseye tue Elektra et Elektra manipule Daredevil</p>
+      <button onclick="hideRules()" id="closeRules">Fermer les règles</button>
+    </div>
+  </div>
+
+  <div id="game">
+    <h2>Bon jeu, <span id="playerName"></span> !</h2>
+    <div class="choice">
+        <div class="button-container">
+            <button onclick="playerChoice('pierre')" class="choice1"></button>
+            <div class="button-description1">Daredevil</div>
+        </div>
+        <div class="button-container">
+            <button onclick="playerChoice('feuille')" class="choice2"></button>
+            <div class="button-description2">Bullseye</div>
+        </div>
+        <div class="button-container">
+            <button onclick="playerChoice('ciseaux')" class="choice3"></button>
+            <div class="button-description3">Elektra</div>
+        </div>
+    </div>    
+    <div id="result">
+        <div class="choices">
+            <p>Choix du joueur : <span id="playerChoice"></span></p>
+            <button id="replay" style="display: none;" onclick="restartGame()">Recommencer</button>
+            <p>Choix de l'ordinateur : <span id="computerChoice"></span></p>
+        </div>
+        <div class="other-info">
+            <p>Résultat : <span id="roundResult"></span></p>
+            <p>Score : <span id="score"></span></p>
+            <p>Manche en cours : <span id="roundsPlayed">0</span></p>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
