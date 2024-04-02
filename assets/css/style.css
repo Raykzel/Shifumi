@@ -1,11 +1,11 @@
 @font-face {
     font-family: "DD";
-    src: url(./assets/font/Daredevil.ttf);
+    src: url(./font/Daredevil.ttf);
 }
 
 @font-face {
     font-family: "bebas";
-    src: url(./assets/font/BebasNeue-Regular.ttf)
+    src: url(./font/BebasNeue-Regular.ttf)
 }
 
 #welcome {
@@ -135,7 +135,7 @@ h2 {
 }
 
 div .choice1 {
-    background-image: url(./assets/images/daredevil.jpg);
+    background-image: url(./img/daredevil.jpg);
 }
 
 .button-description1 {
@@ -155,15 +155,15 @@ div .choice1 {
 
 
 div .choice2 {
-    background-image: url(./assets/images/bullseye.jpg);
+    background-image: url(./img/bullseye.jpg);
 }
 
 div .choice3 {
-    background-image: url(./assets/images/elektra.jpg);
+    background-image: url(./img/elektra.jpg);
 }
 
 body {
-    background-image: url(./assets/images/background\ 2.jpg);
+    background-image: url(./img/background\ 2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
